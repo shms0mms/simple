@@ -1,0 +1,130 @@
+.hero-section {
+	height: calc(100vh - 81px);
+	display: flex;
+	align-items: center;
+	justify-content: between;
+	column-gap: 30px;
+	@media (max-width: 900px) {
+		height: calc(100vh - 115px);
+	}
+}
+.hero-section-modificator {
+	height: auto;
+	align-items: flex-end;
+	padding-top: 100px;
+	@media (max-width: 1024px) {
+		align-items: center;
+		padding-bottom: 100px;
+	}
+	@media (max-width: 690px) {
+		flex-direction: column-reverse;
+	}
+	@media (max-width: 900px) {
+		height: auto;
+	}
+}
+
+.hero-section-wrapper {
+	max-width: 444px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: start;
+
+	@media (max-width: 1024px) {
+		max-width: 400px;
+	}
+
+	@media (max-width: 690px) {
+		max-width: 100%;
+	}
+}
+
+.hero-title {
+	color: #4c5866;
+	font-size: 60px;
+	line-height: 60px;
+
+	@media (max-width: 690px) {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	@media (max-width: 510px) {
+		font-size: 38px;
+		line-height: 38px;
+	}
+	@media (max-width: 400px) {
+		max-width: 221px;
+		font-size: 30px;
+		line-height: 30px;
+	}
+}
+
+.hero-desciption {
+	color: #85859b;
+	font-size: 18px;
+	line-height: 27px;
+	@media (max-width: 510px) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+.hero-button {
+	color: #7875fe;
+	font-size: 20px;
+	padding: 23.5px 89.5px;
+	border: #7875fe solid 1px;
+	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+	@media (max-width: 510px) {
+		padding: 18.5px 60px;
+	}
+	@media (max-width: 400px) {
+		padding: 14.5px 38px;
+	}
+}
+
+.hero-button:hover {
+	background-color: #7875fe;
+	color: #ffffff;
+}
+
+.hero-button:focus {
+	background-color: #dad9fb;
+}
+
+.hero-button:active {
+	background-color: #4946b4;
+	color: #ffffff;
+}
+.hero-section-image {
+	@media (min-width: 1024px) {
+		background: url("../img/book_1.png") 0 0 / cover no-repeat;
+		min-width: 730px;
+		height: 410px;
+	}
+
+	@media (max-width: 1024px) and (min-width: 690px) {
+		transform: translateX(35%);
+		background: url("../img/book_2.png") 0 0 / cover no-repeat;
+		min-width: 369px;
+		height: 334px;
+	}
+	@media (max-width: 690px) {
+		width: 450px;
+
+		height: 342px;
+		background: url("../img/book_3.png") 0 0 / cover no-repeat;
+	}
+	@media (max-width: 510px) {
+		width: 400px;
+	}
+	@media (max-width: 440px) {
+		width: 300px;
+	}
+}
+.hero-section-wrapper-modificator {
+	@media (min-width: 1024px) {
+		padding-bottom: 100px;
+	}
+}
